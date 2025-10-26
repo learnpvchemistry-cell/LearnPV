@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Caprasimo", serif;
+  background-color: #15397c;
+  background-image: url("imagepv.png");
+  background-repeat: no-repeat;         /* no tiling */
+  background-size: cover;               /* covers entire viewport */
+  background-position: center center;   /* centers the image */
+  background-attachment: fixed;         /* keeps background steady on scroll */
+  color: black;
+}
+
+
+/* Toggle Button */
+#toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  background-color: #222;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#toggle-btn:hover {
+  background-color: #444;
+}
+
+/* Sidebar */
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: #f3f3f3;
+  border-right: 2px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+
+}
+
+/* Sidebar links */
+aside div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+aside p {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+  -webkit-text-stroke: 1px #000; /* proper text stroke */
+  text-stroke: 1px #000; /* optional standard property for wider support */
+}
+
+
+aside a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+aside a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.selected {
+  background-color: #1c1fda;
+  color: white;
+}
+
+/* Sidebar hidden by default on smaller screens */
+aside:not(.open) {
+  transform: translateX(-100%);
+}
+
+/* When open */
+aside.open {
+  transform: translateX(0);
+}
+
+/* Main content */
+main {
+  margin-left: 270px;
+
+  padding: 40px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar hidden */
+aside:not(.open) ~ main {
+  margin-left: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+.title {
+    font-family: Tahoma;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

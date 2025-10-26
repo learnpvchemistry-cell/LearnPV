@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnPV Sidebar</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Toggle button -->
+    <button id="toggle-btn">☰</button>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div>
+        <p style="padding-top: 40px;">LearnPV</p>
+        <a href="home.html">Home</a>
+        <a href="page2.html"  >ELibrary</a>
+        <a href="#" class="selected" >Problem Worksheets</a>
+        <a href="page4.html">DigiLab</a>
+                   <a href="page5.html">About LearnPV</a>
+      </div>
+    </aside>
+
+    <!-- Optional main content area -->
+    <main>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+      const toggleBtn = document.getElementById("toggle-btn");
+      const sidebar = document.getElementById("sidebar");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

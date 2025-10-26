@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnPV Sidebar</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<style>
+    body {
+        background-image: url("");
+        background-color: white;
+    }
+</style>
+  <body>
+    <!-- Toggle button -->
+    <button id="toggle-btn">☰</button>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div>
+        <p style="padding-top: 40px;">LearnPV</p>
+        <a href="home.html"  >Home</a>
+        <a href="page2.html">ELibrary</a>
+        <a href="page3.html">Problem Worksheets</a>
+        <a href="page4.html">DigiLab</a>
+        <a href="#" class="selected" >About LearnPV</a>
+      </div>
+    </aside>
+
+    <!-- Optional main content area -->
+    <main>
+      <h1  style="font-size:45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  ">LearnPV</h1>
+      <p class="title">LEARN PV (SPHERE-AX) is a dynamic virtual lab that makes gas laws easier to understand. Through interactive simulations and adaptive feedback, students can visualize how gases behave, correct their misconceptions, and retain concepts better. Designed for the K–12 Science curriculum, it transforms abstract equations into exciting scientific discovery.</p>
+      <br>
+      <p class="title">LEARN PV was developed to address persistent misconceptions and low engagement in studying gas laws among Grade 10 Filipino learners. By combining simulation-based experimentation, prediction-reflection cycles, and targeted feedback, it shifts learning from formula memorization to visual understanding. This platform empowers schools with limited laboratory access to provide interactive and effective science learning experiences.</p>
+      <br>
+      <p class="title">To foster scientific literacy by providing a technology-enhanced learning environment that strengthens conceptual understanding, corrects misconceptions, and builds confidence in exploring gas laws and other abstract scientific concepts.</p>
+      <br>
+      <p class="title">with limited laboratory access to provide interactive and effective science learning experiences.</p>
+      <br>
+      <p class="title">PREDICT. EXPERIMENT. UNDERSTAND</p>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+      const toggleBtn = document.getElementById("toggle-btn");
+      const sidebar = document.getElementById("sidebar");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
